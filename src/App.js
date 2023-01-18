@@ -7,6 +7,7 @@ function App() {
 
   const addNewWorkout = () => {
     const newWorkout = generateWorkout()
+    setWorkouts([...workouts, newWorkout])
     console.log("addNewWorkout:", newWorkout)
   }
 
